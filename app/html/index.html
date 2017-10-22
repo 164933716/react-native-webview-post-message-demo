@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<h1>Post Message</h1>
+
+<hr>
+
+<input id="message" type="text">
+
+<input id="submit" type="button" value="submit">
+
+
+<script type="text/javascript">
+  var submitButton = document.getElementById('submit');
+  submitButton.addEventListener('click', function (event) {
+    var message = document.getElementById('message');
+    postMessage(message.value, '*');
+  });
+</script>
+</body>
+</html>
+
+
